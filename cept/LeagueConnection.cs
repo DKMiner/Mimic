@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WebSocketSharp;
 
-namespace Conduit
+namespace Cept
 {
     /**
      * Class that manages a connection with the LCU. This will automatically connect to the League

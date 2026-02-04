@@ -4,7 +4,7 @@ using System.Linq;
 using System.Management;
 using System.Text.RegularExpressions;
 
-namespace Conduit
+namespace Cept
 {
     /**
      * Some static utilities used to interact/query the state of the league client process.

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Conduit
+namespace Cept
 {
     public class DebugLogger
     {

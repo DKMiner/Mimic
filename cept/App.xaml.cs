@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Conduit
+namespace Cept
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -21,7 +21,7 @@ namespace Conduit
             icon = new NotifyIcon
             {
                 Text = "Cept! Auto Accept",
-                Icon = Conduit.Properties.Resources.cept,
+                Icon = Cept.Properties.Resources.cept,
                 Visible = true,
                 ContextMenu = new ContextMenu(new []
                 {
@@ -61,5 +61,6 @@ namespace Conduit
             icon.BalloonTipText = text;
             icon.ShowBalloonTip(5000);
         }
+
     }
 }

@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Windows.Forms;
 
-namespace Conduit
+namespace Cept
 {
     public static class Administrator
     {
