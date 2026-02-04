@@ -87,7 +87,7 @@ namespace Conduit
                     return;
                 }
 
-                autoAcceptTimer = new Timer(_ => AcceptReadyCheck(), null, TimeSpan.FromSeconds(3), Timeout.InfiniteTimeSpan);
+                autoAcceptTimer = new Timer(_ => AcceptReadyCheck(), null, TimeSpan.FromSeconds(8), Timeout.InfiniteTimeSpan);
             }
         }
 
