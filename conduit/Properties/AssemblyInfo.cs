@@ -7,11 +7,11 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Mimic Conduit")]
-[assembly: AssemblyDescription("Desktop application that allows Mimic to communicate with your League client.")]
+[assembly: AssemblyTitle("Cept! Conduit")]
+[assembly: AssemblyDescription("Desktop application that allows Cept! to communicate with your League client.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Thijs Molendijk (molenzwiebel)")]
-[assembly: AssemblyProduct("Mimic Conduit")]
+[assembly: AssemblyProduct("Cept! Conduit")]
 [assembly: AssemblyCopyright("Copyright © Thijs Molendijk 2017-2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

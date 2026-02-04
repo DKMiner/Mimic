@@ -20,8 +20,8 @@ namespace Conduit
 
             icon = new NotifyIcon
             {
-                Text = "Mimic Auto Accept",
-                Icon = Conduit.Properties.Resources.mimic,
+                Text = "Cept! Auto Accept",
+                Icon = Conduit.Properties.Resources.cept,
                 Visible = true,
                 ContextMenu = new ContextMenu(new []
                 {
@@ -57,7 +57,7 @@ namespace Conduit
          */
         public void ShowNotification(string text)
         {
-            icon.BalloonTipTitle = "Mimic Auto Accept";
+            icon.BalloonTipTitle = "Cept! Auto Accept";
             icon.BalloonTipText = text;
             icon.ShowBalloonTip(5000);
         }

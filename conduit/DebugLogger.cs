@@ -13,7 +13,7 @@ namespace Conduit
         {
             var logDirectory = Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
-                "MimicAutoAccept",
+                "CeptAutoAccept",
                 "logs");
             Directory.CreateDirectory(logDirectory);
             writer = new StreamWriter(Path.Combine(logDirectory, fileName), true);

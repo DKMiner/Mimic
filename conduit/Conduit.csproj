@@ -42,7 +42,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>mimic.ico</ApplicationIcon>
+    <ApplicationIcon>Cept.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Costura">
@@ -134,7 +134,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="mimic.ico" />
+    <EmbeddedResource Include="Cept.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

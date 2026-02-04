@@ -20,8 +20,8 @@ namespace Conduit
         public static void Elevate()
         {
             MessageBox.Show(
-                "Your League client is running as administrator, and Mimic cannot access it. Mimic will now attempt to restart as administrator. Press 'Yes' on the Windows prompt to allow this.",
-                "Mimic",
+                "Your League client is running as administrator, and Cept! cannot access it. Cept! will now attempt to restart as administrator. Press 'Yes' on the Windows prompt to allow this.",
+                "Cept!",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error,
                 MessageBoxDefaultButton.Button1

@@ -63,9 +63,9 @@ namespace Conduit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon mimic {
+        internal static System.Drawing.Icon cept {
             get {
-                object obj = ResourceManager.GetObject("mimic", resourceCulture);
+                object obj = ResourceManager.GetObject("cept", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
