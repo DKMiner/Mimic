@@ -9,11 +9,17 @@ namespace Cept
     {
         private NotifyIcon icon;
         private MenuItem autoAcceptMenuItem;
+        private MenuItem keepOnMenuItem;
         private AutoAcceptManager autoAcceptManager;
 
         public App()
         {
             autoAcceptMenuItem = new MenuItem("Auto Accept")
+            {
+                Checked = false
+            };
+
+            keepOnMenuItem = new MenuItem("Keep on after joining")
             {
                 Checked = false
             };
@@ -30,6 +36,7 @@ namespace Cept
                         Enabled = false
                     },
                     autoAcceptMenuItem,
+                    keepOnMenuItem,
                     new MenuItem("Quit", (a, b) => Shutdown())
                 })
             };
@@ -41,6 +48,12 @@ namespace Cept
             autoAcceptMenuItem.Click += (sender, args) =>
             {
                 autoAcceptManager.SetAutoAccept(!autoAcceptManager.AutoAcceptEnabled);
+            };
+
+            keepOnMenuItem.Click += (sender, args) =>
+            {
+                autoAcceptManager.SetKeepOn(!autoAcceptManager.KeepOn);
+                keepOnMenuItem.Checked = autoAcceptManager.KeepOn;
             };
         }
 

@@ -9,10 +9,12 @@ namespace Cept
         private readonly object timerLock = new object();
         private Timer autoAcceptTimer;
         private bool autoAcceptEnabled;
+        private bool keepOn;
 
         public event Action<bool> AutoAcceptChanged;
 
         public bool AutoAcceptEnabled => autoAcceptEnabled;
+        public bool KeepOn => keepOn;
 
         public AutoAcceptManager()
         {
@@ -21,6 +23,11 @@ namespace Cept
 
             leagueConnection.Observe("/lol-matchmaking/v1/ready-check", HandleReadyCheckUpdate);
             leagueConnection.Observe("/lol-gameflow/v1/session", HandleGameflowUpdate);
+        }
+
+        public void SetKeepOn(bool enabled)
+        {
+            keepOn = enabled;
         }
 
         public void SetAutoAccept(bool enabled)
@@ -72,7 +79,7 @@ namespace Cept
             }
 
             string phase = data["phase"];
-            if (phase == "InProgress" && autoAcceptEnabled)
+            if (phase == "InProgress" && !keepOn)
             {
                 SetAutoAccept(false);
             }
