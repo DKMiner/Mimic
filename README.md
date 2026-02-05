@@ -12,9 +12,24 @@ if yes then this app is supposed to prevent that by sending an accept command af
 It's super-lightweight, you can turn it on/off with only a few clicks, no extra screens, and works like other AutoAccepts too!
 
 
+# How to use
+
+0. Download the binary from [Releases](https://github.com/DKMiner/Cept/releases/latest) page
+
+1. Double click the exe file to run the program. It has no strong GUI and goes into your system tray (The arrow in the taskbar)
+
+2. Right click on the tray icon, and you'll see:
+
+   * Auto Accept: Toggle on to start accepting the next ready check after 8 seconds. It will automatically revert to off after you have successfully entered the match (no dodge happened)
+   * Keep on after joining: Toggle on to prevent Auto Accept from turning off after entering a match. Might use slightly more resources.
+   * Quit: Close the app, duh.
+  
+
 ## Developing Cept!
 
 The application lives in the [Conduit](./conduit) directory. Open `Conduit.sln` in Visual Studio to restore dependencies and build the app.
+
+It uses .NET 4.6.1 SDK.
 
 
 ## Credits
